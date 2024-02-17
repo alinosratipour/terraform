@@ -1,0 +1,19 @@
+**/.terraform/*
+terraform.tfstate
+terraform.tfstate.backup
+variables.tf
+crash.log
+*.tfstate
+*.tfstate.*
+# Exclude sensitive variables file
+*.auto.tfvars
+
+# Exclude override files as they are usually used to override non-version-controlled configuration
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Exclude CLI configuration files
+.terraformrc
+terraform.rc
