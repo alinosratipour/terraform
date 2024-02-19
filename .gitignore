@@ -17,4 +17,6 @@ override.tf.json
 # Exclude CLI configuration files
 .terraformrc
 terraform.rc
+
+# Exclude terraform.tfvars from being pushed to remote
 terraform.tfvars
