@@ -17,7 +17,7 @@ provider "aws" {
 
 resource "aws_instance" "ali-ec2-todo-app" {
   instance_type = ""
-  ami             = "ami-0e5f882be1900e43b"   # Update with your AMI ID
+  ami             = "ami-0e5f882be1900e43b"   
   tags                                 = {
  "Name" = "ali-ec2-todo-app" 
         }
