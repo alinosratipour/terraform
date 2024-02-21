@@ -56,12 +56,12 @@ resource "aws_s3_bucket_public_access_block" "ali_bucket_public_access_block" {
 }
 
 
-# RDS
-# resource "aws_db_instance" "todo_db" {
-#   allocated_storage = 20 
-#   engine            = "postgres"  
-#   instance_class    = "db.t3.micro"  
-#   username          = "postgres"  
-#   password          = var.db_password 
+#RDS
+resource "aws_db_instance" "todo_db" {
+  allocated_storage = 20 
+  engine            = "postgres"  
+  instance_class    = "db.t3.micro"  
+  username          = "postgres"  
+  password          = var.db_password 
 
-# }
+}
