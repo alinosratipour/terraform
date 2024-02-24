@@ -63,5 +63,7 @@ resource "aws_db_instance" "todo_db" {
   instance_class    = "db.t3.micro"  
   username          = "postgres"  
   password          = var.db_password 
-
+tags                                 = {
+ "Name" = "ali-todo-db-tag" 
+        }
 }
